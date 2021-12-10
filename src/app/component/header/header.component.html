@@ -1,0 +1,39 @@
+
+
+<header class="bg-primary shadow-sm fixed-top">
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg  navbar-dark ">
+      
+      
+        <a class="navbar-brand" href="#"><i class="fas fa-shipping-fast" style="font-size:  40px;">&nbsp;</i>
+            <strong class="text-barnd">Fast Shopping</strong>
+        </a>
+    
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+          <form class="form-inline my-2 my-lg-0">
+            
+            <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+            <span class="fas fa-search search-icon"></span>
+    
+        </form>
+        </div>
+        <button routerLink="cart" class="btn btn-primary">
+            <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+            <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+          </button>
+        
+
+      </nav>
+      
+</div>
+
+<form id="form-respon" class="my-2 my-lg-0">
+            
+    <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+    <span class="fas fa-search search-icon"></span>
+
+</form>
+</header>
